@@ -1,0 +1,39 @@
+<div class="main-div">
+  <mat-card>
+
+      <mat-card-title>Bienvenidos</mat-card-title>
+      <img matCardImage src="../../assets/imagenes/prueba.png" />
+
+    <mat-card-content>
+      <div>
+      <p>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="text" placeholder="email" formControlName="email" required>
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-hint>Email</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" formControlName="pass">
+        <mat-icon matSuffix>password</mat-icon>
+        <mat-hint>Password</mat-hint>
+      </mat-form-field>
+    </p>
+    </div>
+    </mat-card-content>
+    <mat-card-actions align="start">
+      <button
+        mat-raised-button
+        color="warn"
+        (click)="sesion()"
+        style="background-color: red; color: white; width: 11cm"
+      >
+        Entrar
+      </button>
+    </mat-card-actions>
+    <mat-card-footer> </mat-card-footer>
+  </mat-card>
+</div>

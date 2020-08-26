@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'prueba2routing';
+  // tslint:disable-next-line: typedef
+  title(title: any) {
+  }
+
 }

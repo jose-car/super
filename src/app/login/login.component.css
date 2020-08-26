@@ -1,0 +1,12 @@
+.mat-toolbar {
+  margin: -24px;
+  margin-bottom: 0;
+  width: auto;
+  background: #140f40;
+  color: white;
+}
+
+
+.mat-toolbar-row, .mat-toolbar-single-row{
+  width: auto limportant;
+}
