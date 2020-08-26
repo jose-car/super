@@ -51,11 +51,6 @@ import { PedidosComponent } from '../pedidos/pedidos.component';
     FormsModule,
     MatButtonModule,
 
-
-
-
-
-
   ]
 })
 export class UsuarioModule { }

@@ -15,7 +15,7 @@ const routes: Routes = [
     path: 'm', loadChildren: ( ) => import('./menu/menu.module').then ( m => m.MenuModule)
   },
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: '', redirectTo: 'home', pathMatch: 'full'
   }
 ];
 

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { ThrowStmt } from '@angular/compiler';
-import { GlobalService} from '../globalservice';
+import { GlobalService } from '../globalservice';
+import {MatPaginator} from '@angular/material/paginator';
 
 
 @Component({
@@ -13,9 +14,8 @@ export class ProductoComponent implements OnInit {
   // tslint:disable-next-line: max-line-length
   displayedColumns: string[] = ['existencia', 'idBodPro', 'idProbob', 'nombreProducto', 'presentacionProducto', 'preciosucu', 'nombreBodega', 'nombreBodega', 'codigoBarras', 'activo', 'fechaExpiracion', 'detalleUnidadMedida', 'ItemNumber', 'detalleCompra', 'cantidadMayoreo', 'factura', 'iva', 'ieps', 'sat', 'precioCaja', 'precioCompra', 'preciocaja2', 'idProducto', 'idMarcaProducto', 'subcate', 'Ivaporcenteje', 'Iepsporcentaje', 'NUMERO'];
   dataSource: any;
-  /*new MatTableDataSource(ELEMENT_DATA);*/
 
-  // tslint:disable-next-line: typedef
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   constructor(
     private globalservice: GlobalService
 
@@ -30,8 +30,7 @@ export class ProductoComponent implements OnInit {
       console.log(data.data);
       this.dataSource = new MatTableDataSource(data.data);
     });
-
-
+    this.dataSource.paginator = this.paginator;
   }
 
   // tslint:disable-next-line: typedef

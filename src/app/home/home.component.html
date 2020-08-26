@@ -1,10 +1,14 @@
+<div class="padre">
 <div class="main-div">
   <mat-card>
 
       <mat-card-title>Bienvenidos</mat-card-title>
-      <img matCardImage src="../../assets/imagenes/prueba.png" />
-
-    <mat-card-content>
+      <br>
+      <mat-card-title>Super House</mat-card-title>
+      <p style="text-align: center;">
+        <img style="width: 5cm; height: 5cm;"  src="../../assets/imagenes/prueba.png" />
+      </p>
+          <mat-card-content>
       <div>
       <p>
       <mat-form-field>
@@ -29,11 +33,19 @@
         mat-raised-button
         color="warn"
         (click)="sesion()"
-        style="background-color: red; color: white; width: 11cm"
+        style="background-color:royalblue; color:white; width: 5cm"
       >
-        Entrar
+        Iniciar sesión
       </button>
+      <button
+      mat-raised-button
+      color="warn"
+      style="background-color: red; color:white; width: 5cm"
+    >
+      Registro
+    </button>
     </mat-card-actions>
     <mat-card-footer> </mat-card-footer>
   </mat-card>
+</div>
 </div>

@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
         } else {
           console.log("Se encontro el usuario pasa");
           // alert("pasa");
-          this.router.navigate(['/usuario/opciones'])
+          this.router.navigate(['usuario']);
 
         }
       }

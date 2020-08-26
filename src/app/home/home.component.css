@@ -31,3 +31,28 @@ mat-card-content {
   justify-content: center;
   align-items: center;
 }
+
+.padre{
+  height: 100%;
+  width: 100%;
+  background-image: url("https://www.infobae.com/new-resizer/FVH7obz8LJhkg6eLDhnQ0DXgsTA=/768x512/filters:format(jpg):quality(85)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/4UYPYZ7GWBFJPH4HWTVPVRXY3U.jpg");
+
+/*
+  background-image: linear-gradient(
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.7)
+  ),*/
+  /*url("https://www.distribucionactualidad.com/wp-content/uploads/2017/03/Covalco.Tradys.jpg");*/
+  /*url("https://www.audacia.com.mx/wpac/wp-content/uploads/2020/05/super-covid.jpeg");*/
+ /* background-repeat: no-repeat;
+
+ height: 100%;
+ width: 100%;*/
+ /*background: #ff5858;*/
+}
+
+/*.mat-card
+{
+
+}
+*/
