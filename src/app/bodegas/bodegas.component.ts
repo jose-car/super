@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { ThrowStmt } from '@angular/compiler';
 import { GlobalService } from '../globalservice';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-bodegas',
@@ -11,7 +12,7 @@ import { GlobalService } from '../globalservice';
 export class BodegasComponent implements OnInit {
   displayedColumns: string[] = ['id_bodega', 'nombreBodega', 'direccion', 'numeroTelefonico' , 'NUMERO'];
   dataSource: any;
-
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   constructor(
     private globalservice: GlobalService
@@ -25,7 +26,8 @@ export class BodegasComponent implements OnInit {
       console.log(data.data);
      /* this.dataSource = data;*/
       this.dataSource = new MatTableDataSource(data.data);
-      /*console.log(this.dataSource);*/
+    /*console.log(this.dataSource);*/
+      this.dataSource.paginator = this.paginator;
     });
   }
 

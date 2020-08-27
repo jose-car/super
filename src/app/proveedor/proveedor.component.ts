@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
 import { ThrowStmt } from '@angular/compiler';
 import { GlobalService} from '../globalservice';
+import { MatPaginator } from '@angular/material/paginator';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { GlobalService} from '../globalservice';
 export class ProveedorComponent implements OnInit {
   displayedColumns: string[] = ['idProveedor', 'Nombre', 'correo', 'telefono', 'direccion'];
   dataSource: any;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   /*new MatTableDataSource(ELEMENT_DATA);*/
 
   // tslint:disable-next-line: typedef
@@ -30,6 +32,7 @@ export class ProveedorComponent implements OnInit {
     this.globalservice.pro().subscribe(( data: any) => {
       console.log(data.data);
       this.dataSource = new MatTableDataSource(data.data);
+      this.dataSource.paginator = this.paginator;
     });
 
 

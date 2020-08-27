@@ -21,11 +21,12 @@ export class ClienteComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.dataSource.paginator = this.paginator;
     this.globalservice.cli('luis@gmail.com').subscribe(( data: any) => {
       console.log(data.data);
       this.dataSource = new MatTableDataSource(data.data);
+      this.dataSource.paginator = this.paginator;
     });
+
   }
 
   // tslint:disable-next-line: typedef

@@ -29,8 +29,8 @@ export class ProductoComponent implements OnInit {
     this.globalservice. producto().subscribe(( data: any) => {
       console.log(data.data);
       this.dataSource = new MatTableDataSource(data.data);
+      this.dataSource.paginator = this.paginator;
     });
-    this.dataSource.paginator = this.paginator;
   }
 
   // tslint:disable-next-line: typedef
