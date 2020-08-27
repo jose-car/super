@@ -12,7 +12,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./unidades.component.css']
 })
 export class UnidadesComponent implements OnInit {
-  displayedColumns: string[] = ['id_unidad', 'tipoUnidad', 'descripcionUnidad', 'placas', 'NUMERO'];
+  displayedColumns: string[] = ['id_unidad', 'tipoUnidad', 'descripcionUnidad', 'placas', 'NUMERO', 'acciones'];
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   /*new MatTableDataSource(ELEMENT_DATA);*/

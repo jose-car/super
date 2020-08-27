@@ -15,7 +15,7 @@
                   <mat-icon style="font-size: 60;">{{nav.icon}}
 
           </div-->
-          <a mat-list-item routerLink="{{ nav.route }}" *ngFor="let nav of fillerNav">{{nav.name}}</a>
+          <a mat-list-item routerLink="{{ nav.route }}" *ngFor="let nav of fillerNav">{{nav.name}}<mat-icon>{{nav.icon}}</mat-icon></a>
 
         <!--a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{fillerNav}}</a{{nav.name}}-->
       </mat-nav-list>

@@ -11,7 +11,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./pedidos.component.css']
 })
 export class PedidosComponent implements OnInit {
-  displayedColumns: string[] = ['id_pedido', 'nombreBodega', 'direccionPedido', 'fecha_hora_pedido', 'fecha_hora_entrega', 'estado', 'NUMERO'];
+  displayedColumns: string[] = ['id_pedido', 'nombreBodega', 'direccionPedido', 'fecha_hora_pedido', 'fecha_hora_entrega', 'estado', 'acciones'];
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   /*new MatTableDataSource(ELEMENT_DATA);*/

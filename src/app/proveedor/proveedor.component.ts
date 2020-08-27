@@ -13,7 +13,7 @@ import { MatPaginator } from '@angular/material/paginator';
 
 
 export class ProveedorComponent implements OnInit {
-  displayedColumns: string[] = ['idProveedor', 'Nombre', 'correo', 'telefono', 'direccion'];
+  displayedColumns: string[] = ['idProveedor', 'Nombre', 'correo', 'telefono', 'direccion', 'acciones'];
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   /*new MatTableDataSource(ELEMENT_DATA);*/

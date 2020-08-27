@@ -10,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./cliente.component.css']
 })
 export class ClienteComponent implements OnInit {
-  displayedColumns: string[] = ['id_empleado', 'nombreCompleto', 'puesto', 'telefono' , 'jefeInmediato', 'NUMERO'];
+  displayedColumns: string[] = ['id_empleado', 'nombreCompleto', 'puesto', 'telefono' , 'jefeInmediato', 'NUMERO' , 'acciones'];
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 

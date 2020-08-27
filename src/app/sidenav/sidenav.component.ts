@@ -13,13 +13,13 @@ export class SidenavComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
    fillerNav = [
-    { name: 'Menu', route: 'producto', icon: 'grade' },
-    { name: 'Producto', route: 'producto', icon: 'perm_contact_calendar' },
-    { name: 'Provedores', route: 'proveedor', icon: 'perm_contact_calendar' },
-    { name: 'Personal', route: 'cliente', icon: 'perm_contact_calendar' },
-    { name: 'Bodegas', route: 'bodegas', icon: 'perm_contact_calendar' },
-    { name: 'Unidades', route: 'unidades', icon: 'perm_contact_calendar' },
-    { name: 'Pedidos', route: 'pedidos', icon: 'perm_contact_calendar' },
+    { name: 'Menu', route: '  ', icon: 'home' },
+    { name: 'Producto', route: 'producto', icon: 'add_shopping_cart' },
+    { name: 'Provedores', route: 'proveedor', icon: 'people' },
+    { name: 'Personal', route: 'cliente', icon: 'person' },
+    { name: 'Bodegas', route: 'bodegas', icon: 'home_work' },
+    { name: 'Unidades', route: 'unidades', icon: 'directions_car' },
+    { name: 'Pedidos', route: 'pedidos', icon: 'business_center' },
   ];
 
   fillerContent = Array.from({ length: 60}, () =>

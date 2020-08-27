@@ -10,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrls: ['./bodegas.component.css']
 })
 export class BodegasComponent implements OnInit {
-  displayedColumns: string[] = ['id_bodega', 'nombreBodega', 'direccion', 'numeroTelefonico' , 'NUMERO'];
+  displayedColumns: string[] = ['id_bodega', 'nombreBodega', 'direccion', 'numeroTelefonico' , 'NUMERO', 'acciones'];
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
